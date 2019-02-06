@@ -55,7 +55,7 @@ const AllElements = (props) => {
                 </div>
                 <div className="col span-2-of-3">
                     <select name={props.id}>
-                        <option value={props.select[0].opt1Value} onChange = {props.handleInputChange}>{props.select[0].opt1Name}</option>
+                        <option value={props.select[0].optValue} onChange = {props.handleInputChange}>{props.select[0].optName}</option>
                         <option value="devop" onChange = {props.handleInputChange}>DevOps</option>
                         <option value="android development"  onChange = {props.handleInputChange} selected>Android Development</option>
                         <option value="ios development" onChange = {props.handleInputChange}>IOS</option>

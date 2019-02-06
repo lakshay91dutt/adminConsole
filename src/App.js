@@ -11,6 +11,7 @@ class App extends Component {
         ReactDOM.render(<App1 />, document.body);
     }
     defaultMsg=(event) => {
+        event.preventDefault();
         document.write('<h1> Work in progress</h1>');
     }
     render() {
@@ -18,10 +19,10 @@ class App extends Component {
             <div>
                 <div className="hero-text-box">
                     <h1>ADMINISTRATOR'S DASHBOARD</h1>
-                    <a className="btn btn-ghost" href="#" onClick={this.loadApp1}>Register Employee</a>
-                    <a className="btn btn-full" href="#" onClick={this.defaultMsg}>Edit Employee Profile</a>
-                    <a className="btn btn-ghost" href="#" onClick={this.defaultMsg}>Requests</a>
-                    <a className="btn btn-full" href="#" onClick={this.defaultMsg}>Others</a>
+                    <a className="btn btn-ghost" href="register" onClick={this.loadApp1}>Register Employee</a>
+                    <a className="btn btn-full" href="editEmployee" onClick={this.defaultMsg}>Edit Employee Profile</a>
+                    <a className="btn btn-ghost" href="requests" onClick={this.defaultMsg}>Requests</a>
+                    <a className="btn btn-full" href="others" onClick={this.defaultMsg}>Others</a>
                 </div>
             </div>);
 

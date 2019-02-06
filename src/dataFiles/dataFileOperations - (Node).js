@@ -23,7 +23,7 @@ import * as data from './userData.json';
 
 //newData ----> String
 let ProcessRecords = () => {
-
+    let var = "name";
     //console.log('(Inside processRecords Funtion) {newData = }', newData);
     // let fileData = [];
     // fileData = readData();
